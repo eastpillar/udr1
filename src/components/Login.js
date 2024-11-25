@@ -7,7 +7,7 @@ function App() {
   const handleSubmit = (event) => {
     event.preventDefault();
     
-    // 로그인 로직(API)을 여기에 추가
+    // 로그인 로직(API)을 여기 추가
     console.log("Email:", email);
     console.log("Password:", password);
   };
