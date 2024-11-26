@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-//import '/Users/andongju/Desktop/개발 공부/project/udr1/src/styles/app.css';
+
 
 const FindPass = () => {
     const [name, setName] = useState('');
