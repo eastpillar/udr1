@@ -20,7 +20,7 @@ const FindPass = () => {
           backgroundColor: '#ffffff',
           fontFamily: "'Noto Sans KR', sans-serif"
         }}>
-          <h2>비밀번호 찾기</h2>
+          <h2 style={{ color: '#1e3a8a', marginBottom: '20px', textAlign: 'center' }}>비밀번호 찾기</h2>
           <form onSubmit={handleSubmit}>
             <div>
               <label>
