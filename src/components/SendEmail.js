@@ -6,15 +6,39 @@ const SendEmail = () => {
         event.preventDefault();
     }
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '400px', margin: 'auto', padding: '20px' }}>
-          <img src="/images/greenCheck.png" style={{width:"80px", height:"80px"}}/>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          maxWidth: '400px',
+          margin: '50px auto',
+          padding: '30px',
+          borderRadius: '15px',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+          backgroundColor: '#ffffff',
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontFamily: "'Noto Sans KR', sans-serif"
+        }}>
+          <img src="/images/greenCheck.png" style={{maxwidth: '100%', maxHeight: '100%', objectFit : 'contain'}}/>
           <form onSubmit={handleSubmit}>
             <div>
-              <label>
+              <label style={{display : 'block', textAlign: 'center'}}>
               이메일로 비밀번호 재설정 링크를 발송하였습니다.
               </label>
             </div>
-            <button type="submit">로그인 페이지로 이동</button>
+            <button type="submit"
+             style={{
+              width: '100%',
+              padding: '12px',
+              backgroundColor: '#3b82f6',
+              color: 'white',
+              border: 'none',
+              borderRadius: '5px',
+              fontSize: '16px',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              transition: 'background-color 0.3s'
+            }}>로그인 페이지로 이동</button>
             
           </form>
         </div>
