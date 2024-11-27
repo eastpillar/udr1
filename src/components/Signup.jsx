@@ -10,10 +10,12 @@ const Signup = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
     if (password !== confirmPassword) {
       setError("비밀번호가 일치하지 않습니다.");
       return;
     }
+
     console.log("회원가입 정보:", { name, email, password });
   };
 

@@ -5,6 +5,8 @@ import LoginSuccess from './pages/LoginSuccess';
 import FindPass from "./components/FindPass";
 import NotFound from './pages/NotFound'; // NotFound 추가
 import SendEmail from "./components/SendEmail";
+import SignupSuccess from './pages/SignupSuccess';
+import SignupFail from './pages/SignupFail';
 
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
 
           <Route path="*" element={<NotFound />} /> {/* NotFound 페이지 추가 */}
           <Route path="/sendEmail" element={<SendEmail />}/>
+          <Route path="/signupSuccess" element={<SignupSuccess />}/>
+          <Route path="/SignupFail" element={<SignupFail />}/>
       </Routes>
     </Router>
   );
