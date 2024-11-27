@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const FindPass = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        navigate('/sendEmail');
     }
     return (
         <div style={{
