@@ -4,9 +4,13 @@ import { useNavigate } from 'react-router-dom';
 const SignupSuccess = () => {
   const navigate = useNavigate();
 
+  const handleLoginClick = () => {
+    navigate('/'); 
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate('/Login');
+    navigate('/');
   }
   return (
     <div style={{
@@ -30,6 +34,7 @@ const SignupSuccess = () => {
           </label>
         </div>
         <button type="submit"
+        onClick={handleLoginClick}
           style={{
             width: '100%',
             padding: '12px',
