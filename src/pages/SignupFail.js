@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const SignupSuccess = () => {
+const SignupFail = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate('/Login');
+    navigate('//components/Login');
   }
   return (
     <div style={{
@@ -22,11 +22,11 @@ const SignupSuccess = () => {
       alignItems: 'center',
       fontFamily: "'Noto Sans KR', sans-serif"
     }}>
-      <img src="/images/greenCheck.png" style={{ maxwidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+      <img src="/images/redFail.png" style={{ maxwidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
       <form onSubmit={handleSubmit}>
         <div>
           <label style={{ display: 'block', textAlign: 'center' }}>
-            회원가입에 성공했습니다.
+            회원가입에 실패했습니다.
           </label>
         </div>
         <button type="submit"
@@ -48,4 +48,4 @@ const SignupSuccess = () => {
   );
 }
 
-export default SignupSuccess;
+export default SignupFail;
